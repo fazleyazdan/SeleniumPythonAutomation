@@ -1,0 +1,11 @@
+==> Data Driven Testing : in data driven testing , testing are driven by data:
+
+==> meaning the same test case is run multiple times by changing the data
+
+==> most of the times we read data for test cases from the database or excel sheet. 
+
+==> selenium by default does not work with excel. it is solely used for automation
+
+==> we have to install a library for that called "openpyxl"
+
+==> this library works only with .xlsx extensions
