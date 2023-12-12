@@ -1,5 +1,6 @@
 #  In this task we are going to write different data into excel file
 #* if you want to do this we have to specify it 
+#! before writing anything to an excel sheet it must be empty
 
 import openpyxl
 
@@ -26,4 +27,3 @@ sheet.cell(3,2).value = "Kamran"
 sheet.cell(3,3).value = "DevOps"
 
 workbook.save(file_path)
-
