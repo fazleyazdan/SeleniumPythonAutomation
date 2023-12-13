@@ -68,3 +68,6 @@ conn.close()                                #! close the connection after the co
 
 time.sleep(3)
 driver.close()
+
+#* driver.find_element(By.XPATH, "//input[@id='principal']").send_keys(row[0]) ...  
+#* we can also write it like this. due to which we won't have to write this : principle_data = str(row[0])     
