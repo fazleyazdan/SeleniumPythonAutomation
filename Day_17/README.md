@@ -1,5 +1,7 @@
 # Notes:
 
+# --> in general, getting data from the database and passing it to the application is called data driven testings
+
 ==> Data Driven Testing : in data driven testing , testing are driven by data:
 
 ==> meaning the same test case is run multiple times by changing the data
