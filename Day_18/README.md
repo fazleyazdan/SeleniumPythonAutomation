@@ -26,7 +26,7 @@
 # DML --> data manipulation language
 # DRL --> data retrival language
 # TCL --> transaction control language
-# DCL --> data control lanuage
+# DCL --> data control language
 
 # NOTE:
 # testing with the database is also called greybox testing...
