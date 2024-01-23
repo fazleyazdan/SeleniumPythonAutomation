@@ -25,7 +25,7 @@
 # DDL --> data definition language
 # DML --> data manipulation language
 # DRL --> data retrival language
-# TCL --> transaction control language
+# TCL --> transaction control language.
 # DCL --> data control language.
 
 # NOTE:
