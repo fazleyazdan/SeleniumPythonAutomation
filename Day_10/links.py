@@ -9,8 +9,9 @@ from selenium.webdriver.common.by import By
 
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
+options.headless = True
 
-ser_obj = Service("C:\Drivers\chromedriver_win32\chromedriver.exe")
+ser_obj = Service("C:\Drivers\chromedriver\chromedriver.exe")
 driver = webdriver.Chrome(options=options, service=ser_obj)
 driver.get('https://testautomationpractice.blogspot.com/')
 
@@ -19,6 +20,6 @@ links = driver.find_elements(By.TAG_NAME, 'a')
 # links = driver.find_elements(By.XPATH, '//a')
 print('total no of links: ', len(links))
 
-# print all the link names
-for link in links:
-    print(link.text)
+# # print all the link names
+# for link in links:
+#     print(link.text)
