@@ -1,3 +1,4 @@
+import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support import expected_conditions as EC
@@ -27,8 +28,9 @@ driver.get('https://github.com/karamelsoft/greenit')
 driver.get_screenshot_as_file("screenshot.png")
 
 # Wait for a specific element to be present on the page
-noofcommits = driver.find_element(By.XPATH, "//span[@class='Text-sc-17v1xeu-0 hfRvxg']")
-date_time = driver.find_element(By.XPATH, "//a[@class='Link__StyledLink-sc-14289xe-0 GCHqa Link--secondary']/following-sibling::relative-time")
+# time.sleep(3)
+noofcommits = driver.find_element(By.XPATH, "//span[@class='Text-sc-17v1xeu-0 UrHoN']")
+date_time = driver.find_element(By.XPATH, "//a[@class='Link__StyledLink-sc-14289xe-0 elltiT Link--secondary']/following-sibling::relative-time")
 date_time_value = date_time.get_attribute('title')
 print(noofcommits.text)
 print(date_time_value)
