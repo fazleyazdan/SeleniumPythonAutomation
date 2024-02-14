@@ -39,22 +39,3 @@ print(len(store_elements))
 driver.close()
 
 
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
-import os
-
-# Service is the location of chrome driver
-
-ser_obj = Service("C:\Drivers\chromedriver_win32\chromedriver.exe")
-driver = webdriver.Chrome(service=ser_obj)
-
-# Environment Setup
-# os.environ['PATH'] += r"C:\Drivers\chromedriver_win32"
-
-# visiting website
-driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
-
-# used implicit wait so that the website can properly load and then the driver perform other actions
-driver.implicitly_wait(5)
