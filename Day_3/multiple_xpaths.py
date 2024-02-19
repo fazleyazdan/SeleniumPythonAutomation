@@ -26,7 +26,7 @@ xpaths = [
 element = None
 for xpath in xpaths:
     try:
-        element = WebDriverWait(driver, 10).until(
+        element = WebDriverWait(driver, 3).until(
             EC.presence_of_element_located((By.XPATH, xpath))
         )
         break  # Exit the loop if element is found successfully
