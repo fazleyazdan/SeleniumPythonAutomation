@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
 
-ser_obj = Service("C:\Drivers\chromedriver_win32\chromedriver.exe")
+ser_obj = Service("C:\Drivers\chromedriver\chromedriver.exe")
 driver = webdriver.Chrome(options=options, service=ser_obj)
 driver.get('http://www.deadlinkcity.com/')
 
