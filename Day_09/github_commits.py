@@ -1,3 +1,5 @@
+# Ignore this task, as it is for my own practice
+
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -29,8 +31,17 @@ driver.get_screenshot_as_file("screenshot.png")
 
 # Wait for a specific element to be present on the page
 time.sleep(3)
-noofcommits = driver.find_element(By.XPATH, "//span[@class='Text-sc-17v1xeu-0 dALsKK']")
-date_time = driver.find_element(By.XPATH, "//a[@class='Link__StyledLink-sc-14289xe-0 dheQRw Link--secondary']/following-sibling::relative-time")
+# noofcommits = driver.find_element(By.XPATH, "//span[@class='Text-sc-17v1xeu-0 dALsKK']")   #! for white BG
+noofcommits = driver.find_element(By.XPATH, "//span[@class='Text-sc-17v1xeu-0 UrHoN']")      #! for dark  BG
+
+#! For white BG
+# date_time = driver.find_element(By.XPATH, "//a[@class='Link__StyledLink-sc-14289xe-0 dheQRw Link--secondary']/following-sibling::relative-time")
+#! For dark  BG 
+date_time = driver.find_element(By.XPATH, "//a[@class='Link__StyledLink-sc-14289xe-0 elltiT Link--secondary']/following-sibling::relative-time")
+
 date_time_value = date_time.get_attribute('title')
 print(noofcommits.text)
 print(date_time_value)
+
+
+
